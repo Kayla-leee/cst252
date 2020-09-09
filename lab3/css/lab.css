@@ -5,12 +5,6 @@ body {
 	background-position: center;
 }
 
-div#content {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
 div.title {
 	color: white;
 	letter-spacing: 3px;
@@ -22,7 +16,13 @@ div.title {
 	text-align: center;
 	width: 80%;
 	margin: 0 auto;
-	margin-top: 5px;
+	margin-top: 15px;
+}
+
+div#content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 div.text {
@@ -48,7 +48,7 @@ div.pics {
 }
 
 div.pics p {
-	font-size: 22px;
+	font-size: 20px;
 }
 
 div.row1 img, .row3 img {
@@ -70,13 +70,14 @@ div.row4 img {
 	min-width: 395px;
 	margin-right: 15px;
 	margin-bottom: 5px;
-	float: left;
 }
 
 a {
 	font-size: 40px;
 	color: white;
 	text-decoration: none;
+	margin-left: 15px;
+	margin-bottom: 15px;
 }
 
 a:hover {
