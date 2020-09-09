@@ -1,0 +1,83 @@
+body {
+    font-family: 'Raleway';
+    background-image: url("../img/sunsetsea.png");
+	background-attachment: fixed;
+	background-position: center;
+}
+
+div#content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+div.title {
+	color: white;
+	letter-spacing: 3px;
+	border: solid white 2px;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-shadow: 0 0 7px white;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+
+div.text {
+	color: white;
+	border: solid white 1px;
+	padding: 0px 20px 10px 20px;
+	margin: 20px;
+	background-color: rgba(255, 255, 255, 0.3);
+	flex: 1;
+}
+
+div.text h1 {
+	text-shadow: 0 0 4px white;
+}
+
+div.text p {
+	font-size: 22px;
+}
+
+div.labs {
+	color: white;
+	border: solid white 1px;
+	padding: 0px 20px 10px 0px;
+	margin: 20px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+div.labs h1 {
+	text-shadow: 0 0 4px white;
+}
+
+div.kayla img {
+	float: left;
+	width: 230px;
+	margin-right: 18px;
+	margin-bottom: 5px; 
+}
+
+span {
+	font-size: 30px;
+	text-shadow: 0 0 4px white;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	text-shadow: 0 0 2px white;
+}
+
+@media screen and (max-width: 600px) {
+  .text, .labs {
+    width: 100%;
+  }
+}
+
