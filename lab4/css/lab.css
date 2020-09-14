@@ -1,0 +1,58 @@
+body {
+    font-family: 'Raleway';
+    background-image: url("../img/flowerfield.png");
+	background-attachment: fixed;
+	background-position: center;
+}
+
+div.title {
+	color: white;
+	letter-spacing: 3px;
+	border: solid white 2px;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-shadow: 0 0 7px white;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+div#content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+div.instructions, .text, .comments {
+	color: white;
+	border: solid white 1px;
+	padding: 0px 20px 10px 20px;
+	margin: 20px;
+	background-color: rgba(255, 255, 255, 0.3);
+	flex: 1;
+}
+
+h1 {
+	text-shadow: 0 0 4px white;
+}
+
+a {
+	font-size: 40px;
+	color: white;
+	text-decoration: none;
+	margin-left: 15px;
+	margin-bottom: 20px;
+}
+
+a:hover {
+	text-shadow: 0 0 4px white;
+}
+
+@media screen and (max-width: 600px) {
+  .text, .instructions, .comments {
+    width: 100%;
+  }
+}
+
