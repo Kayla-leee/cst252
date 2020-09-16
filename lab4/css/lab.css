@@ -1,6 +1,6 @@
 body {
     font-family: 'Raleway';
-    background-image: url("../img/flowerfield.png");
+    background-image: url("../img/pinksunset.png");
 	background-attachment: fixed;
 	background-position: center;
 }
@@ -25,13 +25,36 @@ div#content {
 	flex-wrap: wrap;
 }
 
-div.instructions, .text, .comments {
+div.text {
 	color: white;
 	border: solid white 1px;
 	padding: 0px 20px 10px 20px;
 	margin: 20px;
 	background-color: rgba(255, 255, 255, 0.3);
 	flex: 1;
+}
+
+div.instructions {
+	color: white;
+	border: solid white 1px;
+	padding: 0px 20px 10px 20px;
+	background-color: rgba(255, 255, 255, 0.3);
+	margin: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+div.one {
+	flex-shrink: 1;
+}
+
+div.comments {
+	color: white;
+	border: solid white 1px;
+	padding: 0px 20px 10px 20px;
+	margin: 20px;
+	background-color: rgba(255, 255, 255, 0.3);
+
 }
 
 h1 {
@@ -42,17 +65,25 @@ a {
 	font-size: 40px;
 	color: white;
 	text-decoration: none;
-	margin-left: 15px;
-	margin-bottom: 20px;
+	margin: 20px;
 }
 
 a:hover {
-	text-shadow: 0 0 4px white;
+	text-shadow: 0 0 2px white;
+}
+
+hr {
+    margin: 9px;
+    border: 0;
+    border-top: 1px solid white;
+    box-shadow: 0 0 17px 2px white;
 }
 
 @media screen and (max-width: 600px) {
-  .text, .instructions, .comments {
+  .text, .instructions {
     width: 100%;
   }
 }
+
+
 
