@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 8 - Anon Functions and Callbacks</title>
+	<script src="./js/lab.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<div class="title">
+			<h1>LAB 8: ANON FUNCTIONS AND CALLBACKS</h1>
+		</div>
+
+	<div id="content">
+		<div class="text">
+			<h1 align="center">LAB SUMMARY</h1>
+				<p>This lab was focused on experimenting with anonymous functions and callbacks. It's a bit difficult to explain, but we tested out the setTimeout() with an anonymous function in it. The functions were previously defined before the setTimeouts using the functions "firstThing," "secondThing," and "thirdThing," so it was fine to use an anonymous function for the setTimeout(). We conducted three different tests: test 1 was a parameter test, test 2 was an ordered timer, and test 3 was a timer with a customized timer.</p>
+				<p>Since we completed the contents of the main lab pretty quickly, we attempted some of the Bonus Tasks, which were not too difficult, surprisingly. We attempted questions 1 and 2, which were to see why we used console.log() instead of document.writeln(), and using JS and HTML to get the results of setTimeout() to appear on the page. We were able to get complete question 1, but couldn't figure out question 2. We realized we did the wrong thing for Question 2, but decided to leave it on our page. Read the Challenges section to find out what went wrong for Question 2.</p>
+		</div>
+		<div class="text">
+			<h1 align="center">CHALLENGES</h1>
+				<p>We had no challenges with the main lab, and moreso with the bonus tasks. We didn't know what to do for Question 2, so we looked back at the lecture slides. We saw the "outputElement" tags, so we assumed that was something we needed to input. Turns out, we did what Wes did during class, which was creating a button and getting output on our page using JS and HTML. We accomplished that with ease, but then we realized that that was not what Question 2 was asking.</p>
+				<p>Because of that, I set out to attempt it. I had a feeling it had something to do with changing console.log() to document.writeln(), but I came across multiple issues like, undefined variables, firstThing is not a function, etc. So, I defined those variables, and got filled out the anonymous function. I also got an error that said, "Maximum call stack size exceeded," and I don't know what that meant. Maybe I needed something else in the HTML? I don't know. I decided to stop there and called it a day, but I will come back to look up how to do it.</p> 
+		</div>
+		<div class="text">
+			<h1 align="center">RESULTS</h1>
+				<p>The results can be seen in the console log, as well as the Bonus Task section!</p>
+		</div>
+	</div>
+<hr>
+	<div id="content">
+		<div class="bonus">
+			<h1>Bonus Task</h1>
+				<div id="output">
+				</div><br>
+					<button onClick="javascript:main()">Click Click Click</button>
+				<br>
+				<div class="bonus1">
+					<h2>Question 1: Why did we have to use console.log( ) and not old friend document.writeln( )?</h2>
+					<img src="./img/bonusjs.png">
+					<img src="./img/bonuspage.png">
+					<p>We had to use console.log( ) so it would appear in our console. Using document.writeln( ) completely wrote over the whole page, which is what we don’t want. Referring back to Lab 7, we did the window prompt and name sorting with console.log( ). We do all this in console.log( ) because we want it to happen on the page internally, behind the scenes, or basically somewhere where the user won’t see it happen. document.writeln( ) makes whatever we’re coding appear on the page.</p>
+				</div>
+		</div>
+
+	</div>	
+
+	<a href="../index.html">BACK TO HOME</a><br>
+	<br>
+
+</body>
+</html>
