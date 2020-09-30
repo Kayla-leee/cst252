@@ -1,0 +1,84 @@
+body {
+    font-family: 'Raleway';
+    background-image: url("../img/sunsetsea.png");
+	background-attachment: fixed;
+	background-position: center;
+}
+
+div.title {
+	color: white;
+	letter-spacing: 3px;
+	border: solid white 2px;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-shadow: 0 0 7px white;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+div#content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+div.text {
+	color: white;
+	border: solid white 1px;
+	padding: 0px 20px 10px 20px;
+	margin: 20px;
+	background-color: rgba(255, 255, 255, 0.3);
+	flex: 1;
+	margin-top: 17px;
+}
+
+div.javascript {
+	color: white;
+	border: solid white 1px;
+	padding: 0px 20px 10px 20px;
+	margin: 20px;
+	background-color: rgba(255, 255, 255, 0.3);
+	flex-grow: 1;
+}
+
+h1, h2 {
+	text-shadow: 0 0 4px white;
+}
+
+a {
+	font-size: 40px;
+	color: white;
+	text-decoration: none;
+	margin: 20px;
+}
+
+a:hover {
+	text-shadow: 0 0 2px white;
+}
+
+.javascript a {
+	font-size: 20px;
+	margin-left: 0px;
+}
+
+hr {
+    margin: 9px;
+    border: 0;
+    border-top: 1px solid white;
+    box-shadow: 0 0 17px 2px white;
+}
+
+#output2 img {
+	width: 30%;
+	margin-top: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .text, .javascript {
+    width: 100%;
+  }
+}

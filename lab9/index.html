@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 9 - Javascript for the Web</title>
+	<script src="./js/lab.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<div class="title">
+			<h1>LAB 9: JAVASCRIPT FOR THE WEB</h1>
+	</div>
+
+	<div id="content">
+		<div class="text">
+			<h1 align="center">LAB SUMMARY</h1>
+				<p>For this lab, we were to create elements in Javascript and have the output appear in our HTML page using divs and various Javascript tags such as "document.createElement( )," and "appendChild( )." We created two: a paragraph element and an button/image element. Because we already created the button/image element in the previous lab, we decided to use that as our "new2El." After creating the and making sure the script outputs work on the page, we styled them with CSS in the Javascript file.</p>
+		</div>
+		<div class="text">
+			<h1 align="center">CHALLENGES</h1>
+				<p>The challenges for this lab were mainly from getting the codes correct, as things didn't appear properly in the beginning. By checking each other's codes and looking into Inspect Console, we found our mistakes and corrected them accordingly. A few of our mistakes were: forgetting to appendChild "new1El," needing a different output div (we just put "output2"), and small typos. One challenge specific to me was that my new2El (button/image) kept overwriting my new1El on the webpage, and I couldn't figure out why. It's there, but it only disappeared whenever I click on the button. After scanning through my code multiple times, I realized that my code was like this:</p>
+				<p><pre>outputElement = document.getElementById("output2");<br>outputEl.innerHTML = "Vibing.";</pre></p>
+				<p>For the longest time ever, I didn't catch that I had both "outputElement" and "outputEl." I copied and pasted the code from my previous lab, and only changed "Element" to "El" to match the instructions. I didn't realize that I forgot to change the first line to "El" as well. This seems like a minor issue, but it just took me so long to find it that it was one of my main challenges for this lab. Funny thing, however, that typo caused my image to appear multiple times every time you click the button. (Click 5 times, the image will appear 5 times.) That cracked me up, but sadly, that stopped when I fixed the "outputElement" to "outputEl."</p>
+		</div>
+		<div class="text">
+			<h1 align="center">RESULTS</h1>
+				<p>The results are in the Javascript Output section! The Javascript CSS is subtle, since it was just margin and font size changes. Click the link to the Javacript File to see in said section. Also, click the button for Patrick Vibing!</p>
+		</div>
+	</div>
+<hr>
+	<div id="content">
+		<div class="javascript">
+			<h1>Javascript Output</h1>
+				<div id="output">
+				</div>
+				<button onClick="javascript:main()">Patrick Vibing</button>
+				<div id="output2">
+				</div><br>
+				<a href="./js/lab.js">Javascript File Link Here</a>
+				
+		</div>
+
+	</div>	
+
+	<a class="home" href="../index.html">BACK TO HOME</a><br>
+	<br>
+
+</body>
+</html>
