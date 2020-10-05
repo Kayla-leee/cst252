@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 10 - JavaScript Events and Forms</title>
+	<script src="./js/lab.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<div class="title">
+			<h1>LAB 10: JAVASCRIPT EVENTS AND FORMS</h1>
+	</div>
+
+	<div id="content">
+		<div class="text">
+			<h1 align="center">LAB SUMMARY</h1>
+				<p>This lab was focused on creating an input form field with a button that has a sorting function connected to it. Ashlyn and I came across multiple challenges that all stemmed from not knowing what exactly to change in the borrowed code. After reviewing the lecture notes, looking back at Wes' JSFiddle code, and asking fellow classmates, we did not get any new information. We eventually asked a friend who took the class last semester for help, and seeing and using her code definitely helped us understand what we were supposed to do. Scroll through the Challenges to see the whole story.</p>
+		</div>
+		<div class="text">
+			<h1 align="center">CHALLENGES</h1>
+				<p>Our main challenge was that we knew what the results were supposed to be, but we didn't know how to conduct it in our code. Per the instructions, we were to, "Borrow the sort() function or my anagram() function from Lab 7, and attach an event listener to your button that does the following..." From the borrowed name-sorting function code from our Lab 7, we knew we had to change the code, but we didn't know what to change.</p>
+				<p>I didn't know where to go from there, so I went into the lecture notes for help. After borrowing the code under the "Getting Data From Fields" slides, nothing happened. I figured I was missing something, but what? I changed/added various codes, but nothing seemed to work (browser Console provided no error information). I then borrowed Wes' JSFiddle code to simulate the button function we did in the Breakout Rooms last class, since I knew it's close to what the results for the lab should be. It worked, but it only output the user's name as is. I wanted it to shuffle. At this point, Ashlyn had already asked several classmates for help, but to no avail. They were either stuck as well, or completed it in a complicated way.</p>
+				<p>After changing, removing, and replacing various codes here and there, we were still stuck. Like a lightbulb popping into my brain, I remembered that my friend, Xue Ee Ong, took this class last semester. I went to her for help, and asked to borrow her code. After looking at her code, I realized what we couldn't understand from the lab instructions given to us. I also realized what we did differently. In our attempts, we defined the functions on its own, and then input/referenced the wrong things inside "function( ) { }" in the Event Listener button. We didn't know that most of the code from Lab 7 was supposed to go INTO the Event Listener.</p>
+		</div>
+		<div class="text">
+			<h1 align="center">RESULTS</h1>
+				<p>The results can be seen in the Javascript Output section. Enter your name and click the Shuffle button to see the output below it in purple. Click into the Console in Inspect or the Javascript link in the same section to see the code.</p>
+		</div>
+	</div>
+<hr>
+	<div id="content">
+		<div class="javascript">
+			<h1>Javascript Output</h1>
+
+				Input Your Name: <input type="text" id="user-name"><br>
+				<button id="my-button">Shuffle Name!</button>
+
+				<div id="output">
+					<h2 id=heading>Hello, visitor!</h2>
+				</div>
+
+				<a href="./js/lab.js">Javascript File Link Here (hover)</a>
+				
+		</div>
+
+	</div>	
+
+	<a class="home" href="../index.html">BACK TO HOME</a><br>
+	<br>
+
+</body>
+</html>
