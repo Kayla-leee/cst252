@@ -52,6 +52,8 @@ function eeveeSort(str) {
 	}
 }
 
+debugger;
+
 var myButton = document.getElementById("my-button");
 myButton.addEventListener("click", function() {
 	var name = document.getElementById("input").value;

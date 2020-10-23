@@ -11,6 +11,7 @@
 	 for (i=1; i<=200; i++) {
 	 	outputEl = document.getElementById("output");
 	 	newEl = document.createElement("p");
+	 	debugger;
 	 	if (i%105 == 0) {
 	 		newEl.innerHTML = i + " - FizzBuzzBoom";
 	 		outputEl.appendChild(newEl);
@@ -40,10 +41,19 @@
 	 		outputEl.appendChild(newEl);
 	 		console.log("Boom");
 	 	} else {
-	 		newEl.innerText = i;
+	 		newEl.innerHTML = i;
 	 		outputEl.appendChild(newEl);
 	 		console.log(i);
 	 	} 
 	 }
 //}
+
+// css
+document.getElementById("output").style.fontSize = "16px";
+document.getElementById("output").style.padding = "0px 20px 10px 20px";
+document.getElementById("output").style.columnCount = "6";
+
+
+
+
 
