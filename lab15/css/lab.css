@@ -77,6 +77,10 @@ hr {
     box-shadow: 0 0 17px 2px white;
 }
 
+img {
+	width: 400px;
+}
+
 
 @media screen and (max-width: 600px) {
   .text, .javascript {
