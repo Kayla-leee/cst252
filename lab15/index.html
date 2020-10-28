@@ -16,22 +16,90 @@
 	<div id="content">
 		<div class="text">
 			<h1 align="center">LAB SUMMARY</h1>
-				<p></p>
+				<p>For this lab, we were to replicate the Javascript from Lab 14 and use it for this lab. The slight difference was that we use classes instead of prototypes for the JS code. However, Ashlyn and I realized that we already used classes for Lab 14, so we didn't have to modify anything for this lab. We would have to go back to modify Lab 14 later on. We then created a section for an OOP Design for the game Hangman.</p>
 		</div>
 		<div class="text">
 			<h1 align="center">CHALLENGES</h1>
-				<p></p>
+				<p>We didn't have much challenges with this lab. We did struggle a little bit with the pseudocode, since we didn't know what to put. We ended up using the lecture notes for reference, which really helped, especially with #3 and #4 of the OOP.</p>
 		</div>
 		<div class="text">
 			<h1 align="center">RESULTS</h1>
-				<p></p>
+				<p>The pseudocodes and JS-ish pseudocodes are in the OOP Design section below.</p>
 		</div>
 	</div>
 <hr>
 	<div id="content">
 		<div class="javascript">
-			<h1>Javascript Output</h1>
+			<h1>OOP Design</h1>
+				<h2>1. Understand the Problem</h2>
+					<p>• Set up game with board and players<br>
+						• Game loop<br>
+						• Draw the board<br>
+						• Choose random word<br>
+						• Get guess from player<br>
+						• Validate letter<br>
+						• Check for correct or wrong letter<br>
+						• Finish game if player has guessed the word or completed the body</p>
+				<h2>2. Pseudocode the High Level Approach</h2>
+					<pre>Set up game
+   Create game board
+Create players
+   Start game loop
+   Render board
+   Generate random word
+   Display length of word to players
+   Get letters from guessers and validate 
+   If letter is correct, display on letter line
+   If wrong, draw body part on hanger
+   Display wrong guess on the side
+If game should end
+   Display victory or loss message
+   Stop looping
+Else
+   Switch to next player and keep looping</pre>
+				<h2>3. Assign Actions to Objects</h2>
+				<pre>Set up game [hangman]
+   Create game board [board]
+Create players [player]
+   Start game loop [hangman]
+   Render board [board]
+   Generate random word [hangman]
+   Display length of word to players [board]
+   Get letters from guessers and validate [player]
+   If letter is correct, display on letter line [board]
+   If wrong, draw body part on hanger [board]
+   Display wrong guess on the side
+If game should end [hangman]
+   Display victory or loss message
+   Stop looping
+Else
+   Switch to next player and keep looping [hangman]</pre>
+				<h2>4. Make Javascript-ish Pseudocode</h2>
+				<pre>
+class Hangman
+    initialize
+        set up board
+        set up players
+        set up starting player
 
+    play
+        loop infinitely
+            call the board rendering method
+            generate random word
+            display length of word to players
+            get letters from guessers and validate
+
+    check_game_over
+        check_victory
+        check_loss
+
+    check_victory
+        if board says word is complete
+            display victory message
+
+    check_loss
+        if board says body is complete
+            display loss message</pre>
 				<div id="output">
 				</div>
 				
