@@ -3,6 +3,7 @@
 <head>
 	<title>Lab 17 - Advanced jQuery</title>
 	<script src="./js/lab.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,30 +15,36 @@
 	</div>
 
 	<div id="content">
-		<div class="text">
+		<div id="summary" class="summary">
 			<h1 align="center">LAB SUMMARY</h1>
-				<p></p>
+				<p>This lab was focused on experimenting with advanced jQuery, again by creating and playing around with buttons. We were to create the buttons within HTML this time, and then add a click function to them with jQuery. These buttons are connected to each of the sections, and by clicking the buttons, the corresponding section will change its style. We used removeClass and toggleClass to implement these changes, while going into our CSS files to create the new styles.</p>
+				<button id="summary-button">Change!</button>
 		</div>
-		<div class="text">
+		<div id="challenges" class="challenges">
 			<h1 align="center">CHALLENGES</h1>
-				<p></p>
+				<p>Our main challenge for this lab was matching everything between all three files, since we got a bit confused between referencing HTML classes and CSS classes in jQuery. For me, since I already had a site CSS set for all labs, I had to remove that class style in order to toggle the new class style. After that, however, repressing the button to untoggle the new class would not retoggle my initial CSS. A simple solution was to retoggle the original class under the same function without needing to remove the new class.</p>
+			<button id="challenges-button">Change!</button>
 		</div>
-		<div class="text">
+		<div id="results" class="results">
 			<h1 align="center">RESULTS</h1>
-				<p></p>
+				<p>Click each of the Change! buttons to see how each of the sections change! You may click the button as many times as you want to turn it on and off. Scroll down to the Bonus section to see how I completed the Bonus task, and feel free to press the Change! button to see how it switches classes.</p>
+			<button id="results-button">Change!</button>
 		</div>
 	</div>
 <hr>
+
 	<div id="content">
 		<div class="javascript">
-			<h1>Javascript Output</h1>
+			<h1>Bonus</h1>
 
-				<div id="output">
+				<div id="bonus" class="bonus">
+					<p>Click the Change! button as many times as you want to see it switch between classes!</p>
 				</div>
-				
+			<button id="bonus-button">Change!</button>
+			<p>The challenges that I had with this bonus was how to implement each class so it would alternate between each class. At first, it was just trial and error, where I would try to put everything under the same function, like I had done for the three sections above (see Javascript file). However, I found that it would overwrite my other toggled classes, so I had to approach it another way. I thought about if it would be possible to do it with an if else statement, but again, I didn't know how to go about that. I eventually found someone else who had thought the same and provided their code for the if else statement on Stack Overflow from user Yottagray. He only wanted to switch between two classes (default and changed), which is what we have already achieved from the main part of the lab. I decided to add more "else if" statements while following the Yottagray's structure. It worked!</p>
 		</div>
 
-	</div>	
+	</div>
 
 	<div class="links">
 		<a class="home" href="../index.html">Home</a> | <a href="./js/lab.js">Javascript File</a>

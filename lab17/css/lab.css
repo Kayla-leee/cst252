@@ -25,7 +25,7 @@ div#content {
 	flex-wrap: wrap;
 }
 
-div.text {
+.summary, .challenges, .results, .bonus {
 	color: white;
 	border: solid white 1px;
 	padding: 0px 20px 10px 20px;
@@ -43,7 +43,6 @@ div.javascript {
 	background-color: rgba(255, 255, 255, 0.3);
 	flex-grow: 1;
 }
-
 
 h1 {
 	text-shadow: 0 0 4px white;
@@ -77,6 +76,42 @@ hr {
     box-shadow: 0 0 17px 2px white;
 }
 
+.bgcolor1 {
+	color: white;
+	border: solid white 1px;
+	padding: 0px 20px 10px 20px;
+	margin: 20px;
+	background-color: rgba(195, 229, 232, 0.8);
+	flex: 1;
+	margin-top: 17px;
+}
+
+.bgcolor2 {
+	color: white;
+	border: solid white 1px;
+	padding: 0px 20px 10px 20px;
+	margin: 20px;
+	background-color: rgba(195, 195, 232, 0.8);
+	flex: 1;
+	margin-top: 17px;
+}
+
+.bgcolor3 {
+	color: white;
+	border: solid white 1px;
+	padding: 0px 20px 10px 20px;
+	margin: 20px;
+	background-color: rgba(220, 195, 232, 0.8);
+	flex: 1;
+	margin-top: 17px;
+}
+
+.invisible {
+	visibility: hidden;
+	padding: 0px 20px 10px 20px;
+	margin: 20px;
+	margin-top: 17px;
+}
 
 @media screen and (max-width: 600px) {
   .text, .javascript {
