@@ -4,44 +4,52 @@
 	<title>Lab 18 - Libraries and Frameworks 1</title>
 	<script src="./js/lab.js" defer></script>
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<!-- Latest compiled and minified Bootstrap CSS -->
+ 	<link rel="stylesheet"
+ 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ 	<!-- jQuery library -->
+ 	<script
+ 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+	</script>
+	<!-- Latest compiled Bootstrap JavaScript -->
+	<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+
+<div class="container">
 
 	<div class="title">
 			<h1>LAB 18: LIBRARIES AND FRAMEWORKS 1</h1>
 	</div>
 
-	<div id="content">
-		<div class="text">
-			<h1 align="center">LAB SUMMARY</h1>
-				<p></p>
-		</div>
-		<div class="text">
-			<h1 align="center">CHALLENGES</h1>
-				<p></p>
-		</div>
-		<div class="text">
-			<h1 align="center">RESULTS</h1>
-				<p></p>
-		</div>
-	</div>
-<hr>
-	<div id="content">
-		<div class="javascript">
-			<h1>Javascript Output</h1>
+	<nav class="navbar bg-light justify-content-center">
+      <a class="nav-link" href="../index.html">Home </a> 
+      <a class="nav-link" href="./js/lab.js">Javascript File</a>
+      <a class="nav-link" href="../lab17/index.html">Previous Lab</a>
+	</nav>
 
-				<div id="output">
-				</div>
-				
+	<div class="row">
+		<div class="col">
+			<h2 align="center">Lab Summary</h2>
+				<p>The focus of this lab was to experiment with Bootstrap. Instead of the usual "div id='content' div class='blahblah'," we were to use containers, rows, and col, which is what makes up the Bootstrap layout.</p>
 		</div>
-
+		<div class="col">
+			<h2 align="center">Challenges</h2>
+				<p>There were a few challenges with this lab. The Bootstrap overwrote my font family and font sizes. I did some research with how to solve this issue, and all I needed to do was be more specific in my CSS. So if I wanted the whole page to be one font, using "body {}" wouldn't work, and I'd have to list out all of my divs, headers, paragraphs, links, navs, titles, etc. and then put the font family under that CSS class. Ashlyn also had issues of her own, which was making the col go side-by-side. She had three col in a row, which naming them "div class='col'" should work, but it didn't for some reason. Her code looked exactly like mine, yet it worked differently. We are still trying to figure that out, so when we solve it for Ashlyn's website, we will resubmit the doc.</p>
+		</div>
+		<div class="col">
+			<h2 align="center">Results</h2>
+				<p>The results can be seen with how the page laid out! The summary, challenges, and results are styled with "row," "container," and "col" classes. Open the inspector to look at the HTML and see what we accomplished.</p>
+		</div>
 	</div>	
 
-	<div class="links">
-		<a class="home" href="../index.html">Home</a> | <a href="./js/lab.js">Javascript File</a>
-	</div>
+</div>
 
 </body>
 </html>

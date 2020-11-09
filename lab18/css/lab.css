@@ -1,56 +1,51 @@
 body {
-    font-family: 'Raleway';
     background-image: url("../img/sunsetsea.png");
 	background-attachment: fixed;
 	background-position: center;
 }
 
-div.title {
+div.title h1 {
 	color: white;
 	letter-spacing: 3px;
 	border: solid white 2px;
-	font-size: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
+	font-size: 35px;
+	padding: 20px;
 	text-shadow: 0 0 7px white;
 	text-align: center;
 	width: 80%;
 	margin: 0 auto;
 	margin-top: 15px;
+	font-family: 'Raleway';
 }
 
-div#content {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+div.container {
+	margin-top: 10px;
+	font-family: 'Raleway';
 }
 
-div.text {
+div.col {
 	color: white;
 	border: solid white 1px;
-	padding: 0px 20px 10px 20px;
+	padding: 10px 20px 10px 20px;
 	margin: 20px;
 	background-color: rgba(255, 255, 255, 0.3);
-	flex: 1;
 	margin-top: 17px;
+	font-family: 'Raleway';
 }
 
 div.javascript {
 	color: white;
 	border: solid white 1px;
-	padding: 0px 20px 10px 20px;
+	padding: 10px 20px 10px 20px;
 	margin: 20px;
 	background-color: rgba(255, 255, 255, 0.3);
-	flex-grow: 1;
+	font-family: 'Raleway';
 }
 
-
-h1 {
-	text-shadow: 0 0 4px white;
-}
 
 h2 {
-	color: #8f246b;
+	text-shadow: 0 0 4px white;
+	font-family: 'Raleway';
 }
 
 .links {
@@ -58,28 +53,36 @@ h2 {
 	color: white;
 	margin-left: 20px;
 	margin-bottom: 20px;
+	font-family: 'Raleway';
 }
 
-a {
+.links a {
 	font-size: 30px;
 	color: white;
-	text-decoration: none;
+	font-family: 'Raleway';
 }
 
-a:hover {
-	text-shadow: 0 0 2px white;
+nav a:hover {
+	text-shadow: 0 0 2px palevioletred;
+	color: white;
 }
 
-hr {
-    margin: 9px;
-    border: 0;
-    border-top: 1px solid white;
-    box-shadow: 0 0 17px 2px white;
+nav {
+	box-shadow: 0 0 15px palevioletred;
+	width: 100%;
+	background-color: white;
+	margin-top: 20px;
+}
+
+nav a {
+	font-size: 20px;
+	font-family: 'Raleway';
+	color: palevioletred;
 }
 
 
 @media screen and (max-width: 600px) {
-  .text, .javascript {
+  .col {
     width: 100%;
   }
 }
