@@ -4,6 +4,8 @@
  * License: Public Domain
  */
 
+// code from wes' jsfiddle example that he provided for us
+// we didn't know how to make other apis work
 
  endpoint="https://api.whatdoestrumpthink.com/api/v1/quotes/random"
 
@@ -34,3 +36,5 @@ $("#activate").click(function(){
       console.log(errorThrown + " Status:" + status );
 	})
 })
+
+
