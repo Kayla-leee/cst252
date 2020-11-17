@@ -17,15 +17,15 @@
 	<div id="content">
 		<div class="text">
 			<h1 align="center">LAB SUMMARY</h1>
-				<p>This lab is comprised of utilizing AJAX as a data retrieval tool in conjugation with jQuery, as well as using APIs.</p>
+				<p>This lab is comprised of utilizing AJAX as a data retrieval tool in conjugation with jQuery, as well as using APIs. We struggled to get it to work at first, but after Wes re-explained and remade the code, we were able to understand it better. We came back, changed things up, and even completed the bonus.</p>
 		</div>
 		<div class="text">
 			<h1 align="center">CHALLENGES</h1>
-				<p>We didn't know how to make the API work, so we ended up using Wes' code in JSFiddle. Our main problem probably stemmed from api key, or something else in the data: {} under $.ajax. We have tried out multiple different APIs, and we're most likely missing something, since it's not just copy and paste the URL and we're good. We probably had to type up more stuff in $.ajax, but we don't know what to do. Since we know Wes' code worked, we settled for it.</p>
+				<p>During class on Monday, Nov. 16, Wes broke things down step-by-step, so now we realized what we did wrong the last time we attempted this lab. We couldn’t just change the URL, since the data for every API is different. Using the new code Wes provided for us in his Lab 19, everything went well. From here, we attempted the bonus, where most of the challenges were.</p>
 		</div>
 		<div class="text">
 			<h1 align="center">RESULTS</h1>
-				<p>Click the button to see the results. Click on the JS File link to see the code (or maybe not because it's Wes' and we all know it's properly coded).</p>
+				<p>Click the button to see the results!</p>
 		</div>
 	</div>
 <hr>
@@ -39,6 +39,14 @@
 				</div>
 
 				<br>
+
+				<p>For this bonus, we wanted to request a second API under one click function.
+				I got this idea from Stack Overflow user Timothy Aaron, but mine was still based on Wes’ code. So, my code is a mix of Wes’ and user Timothy Aaron’s.</p>
+				<p>Again, class on Monday, November 16 was super helpful, as Wes re-made the code simple enough for us to finally understand. He also demonstrated how to call APIs with images for Lab 20, so we decided to do that for the second API. We weren’t sure how to go about that, since Wes didn’t teach us to call two APIs in one button.
+				Our thought process was that now that we knew how to properly request one API, the way the second API is coded should be the same. We copied and pasted the code from the first $.ajax API request, changed the URL, variables, names, etc., and placed them in various places in the JS code. We tried placing it in a new .done(function(data), new $.ajax ​after ​the .done(function(data) from the first API, and other areas. Nothing would work, and errors would always come up in the Console as undefined.So now that we know it at least appears in the page, but we’re not defining it properly.</p>
+				<p>We did some research, but struggled to get results due to not knowing the correct keywords. It took us a few searches to get to where we wanted, until we came across a code by Stack Overflow user Timothy Aaron, and he suggested nesting the second API request in the output function from the first API request. We didn’t want to scrap the code we already had, so we applied it differently to our code. All we did was just place the second $.ajax inside the .done(function(data)), and then used success: to place another function(data), which is where all the output info would go. It worked! To make sure it was working properly, we put something in the Console.
+				We spent quite a long time trying to figure this out, and the main challenge was trying to place the second API in the right area.</p>
+				<p>I’m honestly really proud of this. : )</p>
 				
 		</div>
 

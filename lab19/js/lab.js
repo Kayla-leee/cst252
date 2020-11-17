@@ -27,9 +27,9 @@ $('#activate').click(function(){
           </div>
           `
           $("#output").append(html);
-          
+
           // calling a second api request by placing another $.ajax inside of
-          // the .done function and using success: - by stack overflow user
+          // the .done function and using success: - idea by stack overflow user
           // Timothy Aaron
           $.ajax({
             url: URL2,
