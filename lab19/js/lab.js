@@ -1,40 +1,51 @@
 /*
  * Author: Kayla Lee
- * Created: November 8, 2020
+ * Created: November 16, 2020
  * License: Public Domain
  */
 
-// code from wes' jsfiddle example that he provided for us
-// we didn't know how to make other apis work
 
- endpoint="https://api.whatdoestrumpthink.com/api/v1/quotes/random"
+URL = "https://meowfacts.herokuapp.com/"
+URL2 = "https://aws.random.cat/meow?ref=apilist.fun"
+// URL2 = "https://dog.ceo/api/breeds/image/random"
 
-// add event listener 
-$("#activate").click(function(){
-	console.log("pressed");
-  // alert("pressed");
-	$.ajax({
-      // The URL for the request
-    url: endpoint,
-    // The data to send (will be converted to a query string)
-    data: { 
-      	api_key: "5JNF4JJDJ33J3JH402900"
-    },
-    // Whether this is a POST or GET request
-    type: "GET",
-    // The type of data we expect back
-    dataType : "json",
-  })
-  // If the request succeeds
-  .done(function(data) {
-      // alert("Success!");
-      var quote = data.message;
-      $("#output").append("<p>" + quote)
-  })
-  // If the request fails
-  .fail(function( xhr, status, errorThrown ) { 
-      console.log(errorThrown + " Status:" + status );
-	})
-})
-
+// attach click action to button
+$('#activate').click(function(){
+  console.log("pressed - cat fact"),
+    $.ajax({
+        url: URL,
+        //data: {},
+        type: "GET",
+        // dataType : "json"
+    })
+    .done(function(data) {
+        console.log(data);
+        var catFact = data.data;
+        var html = `
+          <div id="catFact">
+            <p>"${catFact}"</p>
+          </div>
+          `
+          $("#output").append(html);
+          
+          // calling a second api request by placing another $.ajax inside of
+          // the .done function and using success: - by stack overflow user
+          // Timothy Aaron
+          $.ajax({
+            url: URL2,
+            type: "GET",
+            success: function(data) {
+              console.log("pressed - cat image")
+              var imageUrl2 = data.file;
+              var html = `
+              <div id="imageblock">
+                <img src="${imageUrl2}"><br>
+              </div>
+              `
+              $("#output").append(html);
+            }
+          });
+          
+    })
+});
 

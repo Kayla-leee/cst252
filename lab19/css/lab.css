@@ -77,6 +77,20 @@ hr {
     box-shadow: 0 0 17px 2px white;
 }
 
+button {
+	font-family: 'Raleway';
+	font-size: 20px;
+	border-radius: 50px;
+	padding: 10px;
+	border: 0;
+	background-color: palevioletred;
+	color: white;
+}
+
+button:hover {
+	box-shadow: 0 0 10px 2px pink;
+	text-shadow: 0 0 2px white;
+}
 
 @media screen and (max-width: 600px) {
   .text, .javascript {
