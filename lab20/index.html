@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab 20 - JSON and APIs</title>
+	<title>Lab 20 - JSON and APIs (XKCD comic!)</title>
 	<script src="./js/lab.js" defer></script>
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
 	<div class="title">
-			<h1>LAB 20: JSON AND APIS</h1>
+			<h1>LAB 20: JSON AND APIS (XKCD comic!)</h1>
 	</div>
 
 	<div id="content">
 		<div class="text">
 			<h1 align="center">LAB SUMMARY</h1>
-				<p></p>
+				<p>This lab was focused on processing JSON from an API. We were to grab the API from XKCD comics, and place it on our page. We came across the issue of "____ has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource." It was odd because I already had the CORS Unblock extension installed. However, after pressing a few things on the browser, it worked. My partner and I attempted Task X, as it was recommended, but we couldn't figure out how to make it work. We called it a day from there, as the API was a success. </p>
 		</div>
 		<div class="text">
 			<h1 align="center">CHALLENGES</h1>
-				<p></p>
+				<p>The main challenges were making the API work. For me, I still can't figure out what my issue was in making the API appear on my page successfully. I had the Chrome extension installed, but I still had the error pop up in the Console. I looked up solutions on Stack Overflow, but the highly rated/voted solutions were extremely complicated. I abandoned that and moved on to click on the extension itself to see what I can do to possibly trigger something. This means clicking the little puzzle icon and then clicking the three dots to bring up the menu for the extension. There, I clicked on "Test CORS," which opened a new tab with lots of information I didn't bother reading before I closed it. I also clicked on "CORS Unblock," and I did the same thing.</p>
+				<p>After a few minutes of talking about it with my partner, I made a few minor formatting changes to the Javascript code (which shouldn't affect the page), and refreshed the webpage. Somehow...the API worked now. The error in the Console disappeared and it was replaced with the data from the API. I seriously don't know what caused this to work. I checked the CORS Unblock extension again, and this "No access needed" message appeared. I realized that this wasn't there BEFORE I pressed the "Test CORS" and "CORS Unblock," so I suspected that clicking those options were what triggered the extension to work. But was it really? Was that actually what made the error disappear?</p>
+				<p>It was extremely weird because my partner actually did not have the extension installed. Thus, the API worked after she installed it. This means that having the extension should allow the API to work. So my question is, why did I have the error even when I had the extension installed? Was the extension idle, and interacting with it caused it to wake up?</p>
+				<p>Our next issue was Task X. We looked at Wes' code for reference, but didn't want to use it in our code to prevent us from looking like we didn't put any effort into attempting it at all. Thus, we called it a day because it was really late already. We were aware that this lab was worth more than others (5 points more), but we decided that it would be fine to not gain those points.</p>
 		</div>
 		<div class="text">
 			<h1 align="center">RESULTS</h1>
-				<p></p>
+				<p>The results are below! The buttons are there for decoration; they don't actually work.</p>
 		</div>
 	</div>
 <hr>
